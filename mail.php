@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
      // Update this to your desired email address.
-     $recipient = "meetsolanki2883@gmai.com";
+     $recipient = "piyushgoswami.innovatix@gmail.com";
      $subject = "Message from $fullname";
     $mail = new PHPMailer(true);
     
@@ -29,13 +29,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Use Gmail SMTP
         $mail->SMTPAuth = true;
-        $mail->Username = 'meetsolanki2883@gmail.com'; // Your email
+        $mail->Username = 'piyushgoswami.innovatix@gmail.com'; // Your email
         $mail->Password = 'AFE705D547B89AD46403A2AF11D9BAF33F01'; // Your app password or generated password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Email settings
-        $mail->setFrom('meetsolanki2883', 'Meet Solanki');
+        $mail->setFrom('piyush2004', 'Piyush Goswami');
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = $subject;

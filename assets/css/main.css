@@ -5251,7 +5251,7 @@ START: Theme Slider CSS
     transform: translateY(0);
   }
   50% {
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
@@ -5260,25 +5260,25 @@ START: Theme Slider CSS
 
 @keyframes shape2 {
   0% {
-    transform: translateY(0);
+    transform: translateX(25px);
   }
   50% {
-    transform: translateY(35px);
+    transform: translateX(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(25px);
   }
 }
 
 @keyframes shape3 {
   0% {
-    transform: translateY(0);
+    transform: translateX(25px);
   }
   50% {
-    transform: translateY(40px);
+    transform: translateX(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(25px);
   }
 }
 
@@ -5287,7 +5287,7 @@ START: Theme Slider CSS
     transform: translateY(0);
   }
   50% {
-    transform: translateY(45px);
+    transform: translateY(20px);
   }
   100% {
     transform: translateY(0);
@@ -5299,7 +5299,7 @@ START: Theme Slider CSS
   top: 240px;
   left: 300px;
   z-index: -1;
-  animation: shape1 5s ease-out infinite;
+  animation: shape1 5s ease-in-out infinite;
   /* filter: drop-shadow(10px 10px 15px #515455); */
 }
 
@@ -5321,7 +5321,7 @@ START: Theme Slider CSS
   top: 350px;
   right: 350px;
   z-index: -1;
-  animation: shape2 5.5s ease-out infinite;
+  animation: shape2 6s ease-in-out infinite;
   /* filter: drop-shadow(10px 10px 15px #00B6E8); */
 }
 
@@ -5343,7 +5343,7 @@ START: Theme Slider CSS
   bottom: 240px;
   left: 240px;
   z-index: -1;
-  animation: shape3 6s ease-out infinite;
+  animation: shape3 6s ease-in-out infinite;
   /* filter: drop-shadow(10px 10px 15px #00B6E8); */
 }
 
@@ -5364,7 +5364,7 @@ START: Theme Slider CSS
   position: absolute;
   bottom: 200px;
   right: 240px;
-  animation: shape4 6.5s ease-out infinite;
+  animation: shape4 5s ease-in-out infinite;
   /* filter: drop-shadow(10px 10px 15px #00B6E8); */
   z-index: -1;
 }
@@ -12084,6 +12084,10 @@ START: Footer CSS
   transform: translateY(50px);
   pointer-events: none; */
   display: none;
+}
+
+.primary-header-inner{
+  box-shadow: 0 1px 50px rgb(43, 43, 43);
 }
 
 /* For a basic map, using a static image */
