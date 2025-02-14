@@ -19,11 +19,11 @@
 /**----------------------------------------
 START: Template Default CSS
 ----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unbounded:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --rr-ff-body: "DM Sans", sans-serif;
-  --rr-ff-heading: "Unbounded", serif;
+  --rr-ff-heading: "Montserrat", serif;
   --rr-ff-p: "DM Sans", sans-serif;
   --rr-fw-normal: normal;
   --rr-fw-thin: 100;
@@ -2747,14 +2747,14 @@ ul {
   font-weight: 700;
   line-height: 1;
   padding: 20px 40px;
-  border-radius: 100px;
+  border-radius: 10px; /* border-changes */
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   text-transform: uppercase;
   text-align: center;
   position: relative;
   z-index: 1;
-  border: 2px solid var(--rr-color-heading-primary);
+  /* border: 2px solid var(--rr-color-heading-primary); */
 }
 
 .rr-primary-btn:after,
@@ -2810,7 +2810,7 @@ ul {
   font-weight: 700;
   line-height: 1;
   padding: 20px 40px;
-  border-radius: 100px;
+  border-radius: 15px; /* border-changes */
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   text-transform: uppercase;
@@ -5438,7 +5438,7 @@ START: Theme Slider CSS
 
 .about-img {
   height: 650px;
-  border-radius: 60px;
+  border-radius: 20px; /* border changed */
   /* border: 3px solid var(--rr-color-heading-primary); */
 }
 
@@ -5588,8 +5588,8 @@ START: Theme Slider CSS
 .about-items {
   max-width: 480px;
   width: 100%;
-  border: 2px solid var(--rr-color-heading-primary);
-  border-radius: 30px;
+  border: 2px solid rgb(224, 221, 221);
+  border-radius: 15px; /* border-changes */
   padding: 30px;
   /* margin-left: 50px; */
 }
@@ -5633,13 +5633,13 @@ START: Theme Slider CSS
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--rr-color-heading-primary);
+  /* border: 2px solid var(--rr-color-heading-primary); */
   border-radius: 50%;
 }
 
 .about-items .about-item .content .title {
   font-family: var(--rr-ff-heading);
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
   margin-bottom: 10px;
   display: flex;
@@ -5648,7 +5648,7 @@ START: Theme Slider CSS
 
 @media only screen and (max-width: 767px) {
   .about-items .about-item .content .title {
-    font-size: 36px;
+    font-size: 50px;
   }
 }
 
@@ -5914,7 +5914,7 @@ START: Theme Slider CSS
     START: Service CSS
 ----------------------------------------*/
 .service-section .section-heading .bg-text {
-  font-family: "Unbounded";
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 180px;
   color: #2f2f2f;
@@ -5945,7 +5945,7 @@ START: Theme Slider CSS
 .service-item {
   background: linear-gradient(180deg, rgba(23, 23, 23, 0) 30.5%, #1f1f1f 100%);
   filter: drop-shadow(0px 4px 48px rgba(0, 0, 0, 0.25));
-  border-radius: 30px;
+  border-radius: 10px; /* border-changed */
   /* padding: 60px; */
   padding: 40px;
   /* border: 1px solid rgba(64, 64, 64, 0.6); */
@@ -7654,7 +7654,7 @@ START: Theme Slider CSS
   max-width: 590px;
   width: 100%;
   padding: 50px;
-  border-radius: 40px;
+  border-radius: 15px; /* border-changes */
 }
 
 @media only screen and (max-width: 992px) {
@@ -7680,7 +7680,7 @@ START: Theme Slider CSS
 .appointment-form .form-item .form-control {
   box-shadow: none;
   padding: 12px 20px;
-  border-radius: 100px;
+  border-radius: 10px; /* border-changes */
   border: 1px solid #e4e6ea;
   margin-bottom: 25px;
 }
@@ -7871,9 +7871,9 @@ START: Theme Slider CSS
   height: 724px;
   width: 100%;
   position: relative;
-  border-radius: 30px;
+  border-radius: 15px; /* border-changes */
   overflow: hidden;
-  border: 2px solid var(--rr-color-heading-primary);
+  border: 2px solid rgb(224, 221, 221);
 }
 
 @media only screen and (max-width: 992px) {
@@ -7886,7 +7886,7 @@ START: Theme Slider CSS
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px; /* border-changes */
 }
 
 .project-item .project-thumb .project-btn {
@@ -8472,7 +8472,7 @@ START: Theme Slider CSS
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--rr-color-heading-primary);
+  /* border: 2px solid var(--rr-color-heading-primary); */
   border-radius: 50%;
 }
 
@@ -8513,7 +8513,7 @@ START: Theme Slider CSS
 }
 
 .feature-item-wrap:before {
-  background-color: var(--rr-color-heading-primary);
+  background-color: rgb(224, 221, 221); /* color-changes */
   content: "";
   width: 2px;
   height: 100%;
@@ -8559,7 +8559,7 @@ START: Theme Slider CSS
   font-size: 16px;
   font-weight: 600;
   border-radius: 50%;
-  border: 2px solid var(--rr-color-heading-primary);
+  border: 2px solid rgb(224, 221, 221);
 }
 
 .feature-item-wrap .feature-item-2 .feature-box {
@@ -8568,8 +8568,8 @@ START: Theme Slider CSS
   grid-template-columns: 98px 1fr;
   grid-gap: 35px;
   padding: 38px;
-  border: 2px solid var(--rr-color-heading-primary);
-  border-radius: 15px;
+  border: 2px solid rgb(224, 221, 221);
+  border-radius: 10px; /* border-changes */
   max-width: 647px;
   width: 100%;
 }
@@ -9044,8 +9044,8 @@ START: Theme Slider CSS
 .testi-item {
   background-color: var(--rr-color-common-white);
   padding: 40px;
-  border: 2px solid var(--rr-color-heading-primary);
-  border-radius: 30px;
+  border: 2px solid rgb(224, 221, 221);
+  border-radius: 15px; /* border-changes */
 }
 
 @media only screen and (max-width: 767px) {
@@ -9116,8 +9116,8 @@ START: Theme Slider CSS
   display: inline-flex;
   align-items: center;
   list-style: none;
-  border-radius: 100px;
-  border: 1px solid var(--rr-color-heading-primary);
+  border-radius: 10px; /* border-change */
+  /* border: 1px solid var(--rr-color-heading-primary); */
 }
 
 .testi-item .testi-author-info .review li {
@@ -9374,9 +9374,9 @@ START: Theme Slider CSS
 
 .gallary-item {
   position: relative;
-  border-radius: 27px;
+  border-radius: 15px; /* border-changes */
   overflow: hidden;
-  border: 3px solid var(--rr-color-heading-primary);
+  border: 2px solid rgb(189, 189, 189);
 }
 
 .gallary-item .overlay {
@@ -9615,8 +9615,8 @@ START: Blog CSS
 ----------------------------------------*/
 .post-card {
   background-color: var(--rr-color-common-white);
-  border: 2px solid var(--rr-color-border-1);
-  border-radius: 30px;
+  border: 2px solid rgb(224, 221, 221);
+  border-radius: 15px; /* border-changes */
   overflow: hidden;
 }
 
@@ -9624,7 +9624,7 @@ START: Blog CSS
   position: relative;
   height: 350px;
   overflow: hidden;
-  border-radius: 25px 25px 30px 30px;
+  border-radius: 15px 15px 0 0; /* border-change */
 }
 
 @media only screen and (max-width: 767px) {
@@ -11789,7 +11789,7 @@ START: Footer CSS
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--rr-color-heading-primary);
+  /* border: 2px solid var(--rr-color-heading-primary); */
   border-radius: 50%;
   margin: 0px auto 30px;
 }
@@ -11801,14 +11801,14 @@ START: Footer CSS
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--rr-color-heading-primary);
+  /* border: 2px solid var(--rr-color-heading-primary); */ /* border-changes */
   border-radius: 50%;
 }
 
 .card-height {
   /* background-color: transparent; */
   /* border: none; */
-  border-radius: 30px;
+  border-radius: 15px; /* border-changes */
 }
 
 .filter-btn {
@@ -12016,7 +12016,7 @@ START: Footer CSS
 
 .footer-widget p {
   color: white;
-  margin-block: 20px;
+  /* margin-block: 20px; */
   line-height: 25px;
 }
 
