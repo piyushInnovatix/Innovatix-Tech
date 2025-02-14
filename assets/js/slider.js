@@ -20,6 +20,7 @@
         }
         var sliderOptions = {
             speed: 1500,
+            slidesPerView: 4,   
             autoplay: {
                 delay: 7000,
             },
@@ -57,19 +58,19 @@
 })(jQuery);
 
 
-const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    autoplay: {
-        delay: 3000, // Delay in milliseconds (3 seconds)
-        disableOnInteraction: false, // Continue autoplay even after user interaction
-    },
-    speed: 1000, // Transition duration of 1 seconds
+// const swiper = new Swiper(".swiper", {
+//     // Optional parameters
+//     direction: "horizontal",
+//     loop: true,
+//     autoplay: {
+//         delay: 3000, // Delay in milliseconds (3 seconds)
+//         disableOnInteraction: false, // Continue autoplay even after user interaction
+//     },
+//     speed: 1000, // Transition duration of 1 seconds
 
-    // Navigation arrows
-    navigation: {
-        nextEl: ".swiper-btn",
-        prevEl: ".swiper-btn-prev",
-    },
-});
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: ".swiper-btn",
+//         prevEl: ".swiper-btn-prev",
+//     },
+// });

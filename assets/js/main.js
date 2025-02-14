@@ -208,7 +208,7 @@
       loop: true,
       autoplay: true,
       grabcursor: true,
-      speed: 400,
+      speed: 200,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
