@@ -84,7 +84,6 @@ function updateGlobeSize() {
 
 // Camera position and settings
 camera.position.z = 5;
-camera.position.y = 0; // Slight angle for better perspective
 
 // Smooth rotation animation
 let rotationSpeed = 0.002;
