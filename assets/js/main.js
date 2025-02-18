@@ -66,7 +66,7 @@
     //Mobile Menu Js
     $(".mobile-menu-items").meanmenu({
       meanMenuContainer: ".side-menu-wrap",
-      meanScreenWidth: "992",
+      meanScreenWidth: "1170",
       meanMenuCloseSize: "30px",
       meanRemoveAttrs: true,
       meanExpand: ['<i class="fa-solid fa-caret-down"></i>'],
@@ -207,8 +207,9 @@
       slidesPerGroup: 1,
       loop: true,
       autoplay: true,
+      // autoplay: 500,
       grabcursor: true,
-      speed: 200,
+      speed: 300,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -268,13 +269,13 @@
 
     // Sponsor Carousel
     var swiperSponsor = new Swiper(".sponsor-carousel", {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 30,
       slidesPerGroup: 1,
       loop: true,
-      autoplay: true,
+      // autoplay: true,
       grabcursor: true,
-      speed: 400,
+      speed: 500,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -293,7 +294,7 @@
           slidesPerGroup: 1,
         },
         1200: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           slidesPerGroup: 1,
         },
       },

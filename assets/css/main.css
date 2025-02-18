@@ -544,8 +544,8 @@ ul {
   background-size: 20px;
   padding: 20px 0;
   overflow: hidden;
-  border-top: 2px solid var(--rr-color-heading-primary);
-  border-bottom: 2px solid var(--rr-color-heading-primary);
+  /* border-top: 2px solid var(--rr-color-heading-primary);
+  border-bottom: 2px solid var(--rr-color-heading-primary); */
 }
 
 .running-text ul {
@@ -7944,7 +7944,7 @@ START: Theme Slider CSS
   border-radius: 50%;
   font-size: 24px;
   font-weight: 700;
-  border: 2px solid var(--rr-color-heading-primary);
+  /* border: 2px solid var(--rr-color-heading-primary); */
   margin-bottom: 0;
   visibility: hidden;
   opacity: 0;
@@ -9543,7 +9543,7 @@ START: Theme Slider CSS
 
 .office-item:hover {
   background-color: var(--rr-color-theme-primary);
-  border: 1px solid var(--rr-color-heading-primary);
+  /* border: 1px solid var(--rr-color-heading-primary); */
 }
 
 /* !END: Page Header CSS */
@@ -11653,7 +11653,7 @@ START: Footer CSS
 .swiper {
   width: 100%;
   height: auto;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 
 .swiper-slide {
@@ -11817,7 +11817,7 @@ START: Footer CSS
   color: black;
   display: inline-flex;
   /* align-items: center; */
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1;
   padding: 20px 40px;
@@ -11932,13 +11932,19 @@ START: Footer CSS
 .filter-slider .swiper-wrapper .swiper-slide {
   border: 1px solid rgb(224, 221, 221);
   border-radius: 5px;
-  padding-inline: 30px;
+  padding-inline: 10px;
+}
+
+@media (max-width: 768px){
+  .filter-slider .swiper-wrapper .swiper-slide {
+    padding-inline: 15px
+  }
 }
 
 .filter-title {
   border-left: 5px solid #00b6e828;
   transition: all 0.5s;
-  flex-basis: 20%;
+  flex-basis: 35%;
 }
 
 .filter-slider {
