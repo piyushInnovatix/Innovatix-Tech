@@ -2747,7 +2747,8 @@ ul {
   font-weight: 700;
   line-height: 1;
   padding: 20px 40px;
-  border-radius: 10px; /* border-changes */
+  border-radius: 10px;
+  /* border-changes */
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   text-transform: uppercase;
@@ -2810,7 +2811,8 @@ ul {
   font-weight: 700;
   line-height: 1;
   padding: 20px 40px;
-  border-radius: 15px; /* border-changes */
+  border-radius: 15px;
+  /* border-changes */
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   text-transform: uppercase;
@@ -5129,6 +5131,27 @@ START: Theme Slider CSS
   bottom: 0;
   right: 0;
   z-index: -1;
+  transform: rotateY(180deg);
+}
+
+.hero-section-4 .bg-item .shape-7 {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  z-index: -10;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .hero-section-4 .bg-item .shape-7 {
+    display: none;
+  }
+}
+
+.hero-section-4 .bg-item .shape-7 img {
+  width: 60rem;
+  filter: grayscale(1);
+  /* height: 20rem; */
 }
 
 @keyframes shape1 {
@@ -5438,7 +5461,8 @@ START: Theme Slider CSS
 
 .about-img {
   height: 650px;
-  border-radius: 20px; /* border changed */
+  border-radius: 20px;
+  /* border changed */
   /* border: 3px solid var(--rr-color-heading-primary); */
 }
 
@@ -5589,7 +5613,8 @@ START: Theme Slider CSS
   max-width: 480px;
   width: 100%;
   border: 2px solid rgb(224, 221, 221);
-  border-radius: 15px; /* border-changes */
+  border-radius: 15px;
+  /* border-changes */
   padding: 30px;
   /* margin-left: 50px; */
 }
@@ -5913,6 +5938,11 @@ START: Theme Slider CSS
 /**----------------------------------------
     START: Service CSS
 ----------------------------------------*/
+.service-section {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #00b6e865 100%),
+    #171717;
+}
+
 .service-section .section-heading .bg-text {
   font-family: "Montserrat";
   font-weight: 700;
@@ -5922,7 +5952,7 @@ START: Theme Slider CSS
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #00b6e861;
   position: absolute;
-  right: -20%;
+  right: -10%;
   left: auto;
   transform: translate(0);
   top: 0;
@@ -5930,9 +5960,9 @@ START: Theme Slider CSS
 }
 
 .service-wrap {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #00b6e865 100%),
-    #171717;
-  backdrop-filter: blur(145px);
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #00b6e865 100%),
+    #171717; */
+  /* backdrop-filter: blur(145px); */
   max-width: 1840px;
   width: 100%;
   margin: 0 auto;
@@ -5945,11 +5975,64 @@ START: Theme Slider CSS
 .service-item {
   background: linear-gradient(180deg, rgba(23, 23, 23, 0) 30.5%, #1f1f1f 100%);
   filter: drop-shadow(0px 4px 48px rgba(0, 0, 0, 0.25));
-  border-radius: 10px; /* border-changed */
+  border-radius: 10px;
+  /* border-changed */
   /* padding: 60px; */
   padding: 40px;
   /* border: 1px solid rgba(64, 64, 64, 0.6); */
   border: 2px solid rgba(64, 64, 64, 0.6);
+}
+
+.value-logo{
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 100px;
+  box-shadow: 5px 0 10px rgb(177, 172, 172);
+}
+
+.values-item{
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 0 10px rgb(177, 172, 172);
+  padding: 40px;
+  border-top: 12px solid #00b6e8;
+  transition: all .2s ;
+  position: relative;
+  overflow: hidden;
+}
+
+.values-item::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #00b6e8;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: all .4s;
+  z-index: -1;
+}
+
+.values-item:hover::before{
+  transform: scaleY(100);
+}
+
+.values-item h1{
+  font-weight: 700;
+  color: #1e292c
+}
+
+.values-item h3{
+  font-weight: 700;
+  color: #1e292c;
+  font-size: 30px;
 }
 
 @media (max-width: 1170px) {
@@ -7654,7 +7737,8 @@ START: Theme Slider CSS
   max-width: 590px;
   width: 100%;
   padding: 50px;
-  border-radius: 15px; /* border-changes */
+  border-radius: 15px;
+  /* border-changes */
 }
 
 @media only screen and (max-width: 992px) {
@@ -7680,7 +7764,8 @@ START: Theme Slider CSS
 .appointment-form .form-item .form-control {
   box-shadow: none;
   padding: 12px 20px;
-  border-radius: 10px; /* border-changes */
+  border-radius: 10px;
+  /* border-changes */
   border: 1px solid #e4e6ea;
   margin-bottom: 25px;
 }
@@ -7871,7 +7956,8 @@ START: Theme Slider CSS
   height: 724px;
   width: 100%;
   position: relative;
-  border-radius: 15px; /* border-changes */
+  border-radius: 15px;
+  /* border-changes */
   overflow: hidden;
   border: 2px solid rgb(224, 221, 221);
 }
@@ -7886,7 +7972,8 @@ START: Theme Slider CSS
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px; /* border-changes */
+  border-radius: 10px;
+  /* border-changes */
 }
 
 .project-item .project-thumb .project-btn {
@@ -8513,7 +8600,8 @@ START: Theme Slider CSS
 }
 
 .feature-item-wrap:before {
-  background-color: rgb(224, 221, 221); /* color-changes */
+  background-color: rgb(224, 221, 221);
+  /* color-changes */
   content: "";
   width: 2px;
   height: 100%;
@@ -8569,7 +8657,8 @@ START: Theme Slider CSS
   grid-gap: 35px;
   padding: 38px;
   border: 2px solid rgb(224, 221, 221);
-  border-radius: 10px; /* border-changes */
+  border-radius: 10px;
+  /* border-changes */
   max-width: 647px;
   width: 100%;
 }
@@ -9045,7 +9134,8 @@ START: Theme Slider CSS
   background-color: var(--rr-color-common-white);
   padding: 40px;
   border: 2px solid rgb(224, 221, 221);
-  border-radius: 15px; /* border-changes */
+  border-radius: 15px;
+  /* border-changes */
 }
 
 @media only screen and (max-width: 767px) {
@@ -9116,7 +9206,8 @@ START: Theme Slider CSS
   display: inline-flex;
   align-items: center;
   list-style: none;
-  border-radius: 10px; /* border-change */
+  border-radius: 10px;
+  /* border-change */
   /* border: 1px solid var(--rr-color-heading-primary); */
 }
 
@@ -9374,7 +9465,8 @@ START: Theme Slider CSS
 
 .gallary-item {
   position: relative;
-  border-radius: 15px; /* border-changes */
+  border-radius: 15px;
+  /* border-changes */
   overflow: hidden;
   border: 2px solid rgb(189, 189, 189);
 }
@@ -9616,7 +9708,8 @@ START: Blog CSS
 .post-card {
   background-color: var(--rr-color-common-white);
   border: 2px solid rgb(224, 221, 221);
-  border-radius: 15px; /* border-changes */
+  border-radius: 15px;
+  /* border-changes */
   overflow: hidden;
 }
 
@@ -9624,7 +9717,8 @@ START: Blog CSS
   position: relative;
   height: 350px;
   overflow: hidden;
-  border-radius: 15px 15px 0 0; /* border-change */
+  border-radius: 15px 15px 0 0;
+  /* border-change */
 }
 
 @media only screen and (max-width: 767px) {
@@ -11713,6 +11807,7 @@ START: Footer CSS
   font-weight: 900;
   color: #00b6e8;
 } */
+
 .swiper-client-data {
   width: 100%;
   padding: 2rem 4rem;
@@ -11801,14 +11896,16 @@ START: Footer CSS
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid var(--rr-color-heading-primary); */ /* border-changes */
+  /* border: 2px solid var(--rr-color-heading-primary); */
+  /* border-changes */
   border-radius: 50%;
 }
 
 .card-height {
   /* background-color: transparent; */
   /* border: none; */
-  border-radius: 15px; /* border-changes */
+  border-radius: 15px;
+  /* border-changes */
 }
 
 .filter-btn {
@@ -11935,7 +12032,7 @@ START: Footer CSS
   padding-inline: 10px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .filter-slider .swiper-wrapper .swiper-slide {
     padding-inline: 15px
   }

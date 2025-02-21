@@ -273,7 +273,7 @@
       spaceBetween: 30,
       slidesPerGroup: 1,
       loop: true,
-      // autoplay: true,
+      autoplay: true,
       grabcursor: true,
       speed: 500,
       pagination: {
