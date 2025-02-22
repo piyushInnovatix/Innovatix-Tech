@@ -5151,7 +5151,6 @@ START: Theme Slider CSS
 .hero-section-4 .bg-item .shape-7 img {
   width: 60rem;
   filter: grayscale(1);
-  /* height: 20rem; */
 }
 
 @keyframes shape1 {
@@ -7680,6 +7679,17 @@ START: Theme Slider CSS
 .process-item p {
   font-weight: 500;
   margin-bottom: 0;
+}
+
+.process-icn h1{
+  font-weight: 700;
+  color: #00b6e8;
+  text-shadow: 2px 2px 2px #313131;
+}
+
+.process-item h3{
+  font-weight: 650;
+  font-size: 25px;
 }
 
 /* !END: Process CSS */

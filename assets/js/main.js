@@ -273,7 +273,46 @@
       spaceBetween: 30,
       slidesPerGroup: 1,
       loop: true,
-      autoplay: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      grabcursor: true,
+      speed: 500,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          slidesPerGroup: 1,
+        },
+        767: {
+          slidesPerView: 3,
+          slidesPerGroup: 1,
+        },
+        1024: {
+          slidesPerView: 4,
+          slidesPerGroup: 1,
+        },
+        1200: {
+          slidesPerView: 4,
+          slidesPerGroup: 1,
+        },
+      },
+    });
+
+    // Sponsor Carousel
+    var swiperSponsor = new Swiper(".sponsor-carousel2", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       grabcursor: true,
       speed: 500,
       pagination: {
