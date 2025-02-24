@@ -6008,19 +6008,23 @@ START: Theme Slider CSS
 .values-item::before{
   content: '';
   position: absolute;
-  top: 0;
+  top: -12px;
   left: 0;
-  width: 100%;
+  width: calc(100% + 4px);
   height: 3px;
   background-color: #00b6e8;
   transform-origin: top;
-  transform: scaleY(0);
-  transition: all .4s;
+  transform: scaleY(1);
+  transition: all 0.5s ease-out;
   z-index: -1;
 }
 
 .values-item:hover::before{
   transform: scaleY(100);
+}
+
+.values-item:hover h1, .values-item:hover h3{
+  color: white;
 }
 
 .values-item h1{
@@ -7681,10 +7685,68 @@ START: Theme Slider CSS
   margin-bottom: 0;
 }
 
+.process-line-one::after{
+  content: "";
+  background-image: url(/assets/img/images/process-design1.png);
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 50px;
+  top: 15px;
+  position: absolute;
+  left: 21%;
+  z-index: -1;
+}
+
+.process-line-two::after{
+  content: "";
+  background-image: url(/assets/img/images/process-design2.png);
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 50px;
+  top: 40px;
+  position: absolute;
+  left: 21%;
+  z-index: -1;
+}
+
+@media (max-width: 1168px) {
+  .process-line-one::after {
+    width: 300px;
+    top: 30px;
+  }
+
+  .process-line-two::after {
+    width: 300px;
+    top: 35px;
+  }
+}
+
+@media (max-width: 992px){
+  .process-line-one::after{
+    display: none;
+  }
+  
+  .process-line-two::after{
+    display: none;
+  }
+}
+
+
+.process-icn{
+  background-color: #f6feff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .process-icn h1{
   font-weight: 700;
+  font-size: 40px;
   color: #00b6e8;
-  text-shadow: 2px 2px 2px #313131;
+  /* text-shadow: 2px 2px 2px #313131; */
 }
 
 .process-item h3{
