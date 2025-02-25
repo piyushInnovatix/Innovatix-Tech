@@ -942,21 +942,23 @@
 })(jQuery);
 
 document.addEventListener("DOMContentLoaded", function () {
-  const filterButtons = document.querySelectorAll(".filter-btn");
+  const filterButtons = document.querySelectorAll(".page-filter-btn");
   const projects = document.querySelectorAll(".img-disable");
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", function () {
       const category = this.getAttribute("data-category");
 
+      console.log("clicked");
+
       projects.forEach((project) => {
         if (
           category === "all" ||
           project.getAttribute("data-category") === category
         ) {
-          project.classList.remove("hide");
+          project.style.display = "block";
         } else {
-          project.classList.add("hide");
+          project.style.display = "none";
         }
       });
     });
