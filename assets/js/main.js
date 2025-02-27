@@ -964,3 +964,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+let ticking = false;
+window.addEventListener("scroll", () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      // Your scroll logic here
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
