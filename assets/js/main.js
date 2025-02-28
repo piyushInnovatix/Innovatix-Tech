@@ -339,6 +339,31 @@
       },
     });
 
+    // industry slider
+    var swiperSponsor = new Swiper(".industry-slider", {
+      spaceBetween: 0,
+      speed: 4000,
+      direction: 'horizontal',
+      autoplay: { delay: 0 },
+      loop: true,
+      slidesPerView: 1,
+      // freeMode: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 3,
+        },
+        767: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+      },
+    });
+
     // Project Carousel
     var swiperTesti = new Swiper(".project-carousel", {
       slidesPerView: 1,

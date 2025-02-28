@@ -4691,10 +4691,18 @@ START: Theme Slider CSS
   }
 }
 
-/* Kenburns Top */
+/* industry-slider */
 .swiper-slide-active .kenburns-top {
   -webkit-animation-name: kenburns-top;
   animation-name: kenburns-top;
+}
+
+.industry-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.industry-slider .swiper-slide {
+  transition: transform 0ms linear;
 }
 
 @-webkit-keyframes kenburns-top {
@@ -5611,7 +5619,7 @@ START: Theme Slider CSS
 .about-items {
   max-width: 480px;
   width: 100%;
-  border: 2px solid rgb(224, 221, 221);
+  border: 2px solid rgb(97, 95, 95);
   border-radius: 15px;
   /* border-changes */
   padding: 30px;
@@ -5658,6 +5666,20 @@ START: Theme Slider CSS
   align-items: center;
   justify-content: center;
   padding: 15px;
+  /* border: 2px solid var(--rr-color-heading-primary); */
+  border-radius: 50%;
+}
+
+.method-icon {
+  background-color: var(--rr-color-theme-primary);
+  margin-inline: 15px;
+  margin-top: 15px;
+  padding: 20px;
+  height: 85px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* border: 2px solid var(--rr-color-heading-primary); */
   border-radius: 50%;
 }
@@ -5943,6 +5965,12 @@ START: Theme Slider CSS
     #171717;
 }
 
+.counter-section {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #00b6e865 100%),
+    #171717;
+  color: white;
+}
+
 .service-section .section-heading .bg-text {
   font-family: "Montserrat";
   font-weight: 700;
@@ -5975,7 +6003,7 @@ START: Theme Slider CSS
 .service-item {
   background: linear-gradient(180deg, rgba(23, 23, 23, 0) 30.5%, #1f1f1f 100%);
   filter: drop-shadow(0px 4px 48px rgba(0, 0, 0, 0.25));
-  border-radius: 10px;
+  border-radius: 20px;
   /* border-changed */
   /* padding: 60px; */
   padding: 40px;
@@ -6027,6 +6055,11 @@ START: Theme Slider CSS
 .values-item:hover h1,
 .values-item:hover h3 {
   color: white;
+}
+
+.values-item h1 {
+  font-weight: 700;
+  color: #1e292c
 }
 
 .values-item h1 {
@@ -7701,6 +7734,18 @@ START: Theme Slider CSS
   z-index: -1;
 }
 
+.process-line-one-ai::after {
+  content: "";
+  background-image: url(/assets/img/images/process-design1.png);
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 30px;
+  top: 20px;
+  position: absolute;
+  left: 30%;
+  z-index: -1;
+}
+
 .process-line-two::after {
   content: "";
   background-image: url(/assets/img/images/process-design2.png);
@@ -7708,6 +7753,18 @@ START: Theme Slider CSS
   width: 350px;
   height: 50px;
   top: 40px;
+  position: absolute;
+  left: 21%;
+  z-index: -1;
+}
+
+.process-line-two-ai::after {
+  content: "";
+  background-image: url(/assets/img/images/process-design2.png);
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 50px;
+  top: 25px;
   position: absolute;
   left: 21%;
   z-index: -1;
@@ -7723,6 +7780,16 @@ START: Theme Slider CSS
     width: 300px;
     top: 35px;
   }
+
+  .process-line-one-ai::after {
+    width: 200px;
+    top: 30px;
+  }
+
+  .process-line-two-ai::after {
+    width: 200px;
+    top: 25px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -7733,22 +7800,31 @@ START: Theme Slider CSS
   .process-line-two::after {
     display: none;
   }
+
+  .process-line-one-ai::after {
+    display: none;
+  }
+
+  .process-line-two-ai::after {
+    display: none;
+  }
 }
 
 
 .process-icn {
-  background-color: #f6feff;
-  width: 100px;
-  height: 100px;
+  background-color: #ffffff;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .process-icn h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   color: #00b6e8;
   /* text-shadow: 2px 2px 2px #313131; */
 }
@@ -10102,7 +10178,7 @@ START: Blog CSS
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100%;
+  height: 30rem;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -10125,14 +10201,14 @@ START: Blog CSS
 }
 
 .page-header-content {
-  padding: 370px 0 241px;
+  padding: 250px 0 241px;
   position: relative;
   z-index: 2;
 }
 
 @media only screen and (max-width: 992px) {
   .page-header-content {
-    padding: 100px 0 100px 0;
+    padding: 200px 0 100px 0;
   }
 }
 
@@ -12170,16 +12246,18 @@ START: Footer CSS
 }
 
 .industry-icn {
-  border: 1px solid rgb(224, 221, 221);
   border-radius: 10px;
   padding: 10px;
   height: 150px;
+  display: flex;
+  align-items: center;
 }
 
-.industry-icn:hover {
-  box-shadow: 5px 0 10px rgb(177, 172, 172);
-  transition: all 0.5s;
-  /* background-color: white;s */
+.industry-icn div {
+  background-color: #7ddcf7;
+  margin: 10px;
+  border-radius: 10px;
+  padding-inline: auto;
 }
 
 .industry-icn p {
@@ -12243,6 +12321,55 @@ START: Footer CSS
 
 .why-card:hover::before {
   transform: scaleX(1);
+}
+
+@media (min-width: 1025px) {
+
+  .footer-wrap {
+    margin-bottom: 0px
+  }
+
+  .footer-top {
+    padding-bottom: 80px;
+    margin-bottom: 0px;
+  }
+
+  .footer-col {
+    position: relative;
+    padding-block: 50px;
+  }
+
+  .footer-col:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 1px;
+    height: 100%;
+    background-color: #353535;
+  }
+
+  .footer-col:first-child::after {
+    right: -15%;
+  }
+
+  .footer-col:nth-child(4)::after {
+    right: 10%;
+  }
+}
+
+.why-container .content p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.why-icn {
+  background-color: #6bd1ee;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 20px;
 }
 
 /* For a basic map, using a static image */
