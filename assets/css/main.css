@@ -5506,6 +5506,15 @@ START: Theme Slider CSS
   margin-top: 40px;
 }
 
+.part-btn{
+  background-color: #00b6e8;
+  color: #000;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
 .about-3 .section-heading {
   margin-right: 240px;
   /* margin-left: 240px; */
@@ -7889,8 +7898,9 @@ START: Theme Slider CSS
   max-width: 590px;
   width: 100%;
   padding: 50px;
-  border-radius: 15px;
-  /* border-changes */
+  border: 2px solid rgb(218, 218, 218);
+  border-radius: 25px;
+  /* box-shadow: 5px 0 10px rgb(177, 172, 172); */
 }
 
 @media only screen and (max-width: 992px) {
@@ -7987,13 +7997,12 @@ START: Theme Slider CSS
 }
 
 .appointment-items .appointment-item .icon {
-  background-color: var(--rr-color-common-white);
+  background-color: #00b6e8;
   color: var(--rr-color-heading-primary);
   font-size: 26px;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  border: 2px solid var(--rr-color-heading-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8047,7 +8056,6 @@ START: Theme Slider CSS
 }
 
 .appointment-form.form-2 {
-  border: 3px solid var(--rr-color-heading-primary);
   margin-left: auto;
   margin-bottom: -80px;
 }
@@ -8077,19 +8085,15 @@ START: Theme Slider CSS
 
 .appointment-content.content-3 p {
   font-weight: 400;
-  color: var(--rr-color-common-white);
+  color: black;
 }
 
 .appointment-items.items-2 .appointment-item .content span {
-  color: var(--rr-color-common-white);
+  color: black;
 }
 
 .appointment-items.items-2 .appointment-item .content .title a {
-  color: var(--rr-color-common-white);
-}
-
-.appointment-items.items-2 .appointment-item .content .title a:hover {
-  color: var(--rr-color-theme-primary);
+  color: black;
 }
 
 /* !END: Appointment CSS */
@@ -9665,14 +9669,14 @@ START: Theme Slider CSS
 }
 
 .gallary-item .gallary-content {
-  background-color: #f3fcff;
+  background-color: #eefafd;
   padding: 20px;
-
+  padding-top: 30px;
 }
 
 .gallary-item .gallary-content .title {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .gallary-item .gallary-content .sub-title {
@@ -9894,7 +9898,7 @@ START: Blog CSS
 
 @media only screen and (max-width: 767px) {
   .post-card .post-content .title {
-    font-size: 16px;
+    font-size: 16px; 
   }
 }
 
@@ -11676,33 +11680,12 @@ START: Footer CSS
   font-size: 18px;
   font-weight: 500;
   position: relative;
-  padding-left: 30px;
 }
 
 @media only screen and (max-width: 767px) {
   .footer-widget.footer-col-2 .footer-list li a {
     font-size: 15px;
   }
-}
-
-.footer-widget.footer-col-2 .footer-list li a:before {
-  background-image: none;
-  font-family: "Font Awesome 6 Pro";
-  font-size: 14px;
-  font-weight: 700;
-  content: "\f061";
-  color: var(--rr-color-theme-primary);
-  position: absolute;
-  top: 55%;
-  left: 0;
-  transform: translateY(-50%);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.footer-widget.footer-col-2 .footer-list li a:hover:before {
-  color: var(--rr-color-theme-primary);
-  left: 5px;
 }
 
 /* ---------------------- */
@@ -12070,7 +12053,7 @@ START: Footer CSS
   z-index: 1;
 }
 
-.page-filter-btn:hover {
+.page-filter-btn.active {
   color: white;
   background-color: #00b6e8;
   border-color: #00b6e8;
@@ -12285,6 +12268,11 @@ START: Footer CSS
   border-radius: 10px;
   margin-inline: 10px;
   font-weight: 800;
+  transition: all 0.2s ease-in;
+}
+
+.page-btn:hover{
+  color: white
 }
 
 .why-card {

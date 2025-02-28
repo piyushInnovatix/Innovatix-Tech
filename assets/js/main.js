@@ -974,7 +974,11 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       const category = this.getAttribute("data-category");
 
-      console.log("clicked");
+     filterButtons.forEach((btn) => {
+      btn.classList.remove("active")
+     })
+
+     this.classList.add("active")
 
       projects.forEach((project) => {
         if (
