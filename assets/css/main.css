@@ -5506,7 +5506,7 @@ START: Theme Slider CSS
   margin-top: 40px;
 }
 
-.part-btn{
+.part-btn {
   background-color: #00b6e8;
   color: #000;
   padding: 10px;
@@ -5668,19 +5668,19 @@ START: Theme Slider CSS
 }
 
 .about-items .about-item .icon {
-  background-color: var(--rr-color-theme-primary);
+  /* background-color: var(--rr-color-theme-primary); */
   height: 85px;
   width: 85px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
   /* border: 2px solid var(--rr-color-heading-primary); */
   border-radius: 50%;
 }
 
 .method-icon {
-  background-color: var(--rr-color-theme-primary);
+  /* background-color: var(--rr-color-theme-primary); */
   margin-inline: 15px;
   margin-top: 15px;
   padding: 20px;
@@ -6097,7 +6097,7 @@ START: Theme Slider CSS
 }
 
 .service-item .icon {
-  background-color: var(--rr-color-theme-primary);
+  /* background-color: var(--rr-color-theme-primary); */
   height: 98px;
   width: 98px;
   border-radius: 50%;
@@ -8709,7 +8709,7 @@ START: Theme Slider CSS
 }
 
 .feature-item .icon {
-  background-color: var(--rr-color-theme-primary);
+  /* background-color: var(--rr-color-theme-primary); */
   height: 98px;
   width: 98px;
   padding: 25px;
@@ -9623,11 +9623,12 @@ START: Theme Slider CSS
 
 .gallary-item {
   position: relative;
-  border-radius: 15px;
+  border-radius: 20px;
   /* border-changes */
   overflow: hidden;
   box-shadow: 5px 0 10px rgb(177, 172, 172);
   margin: 20px;
+  margin-top: 30px;
 }
 
 .gallary-item .gallary-btn {
@@ -9658,14 +9659,12 @@ START: Theme Slider CSS
 .gallary-item .gallary-img {
   height: 450px;
   transition: all .5s;
-
 }
 
 .gallary-item .gallary-img img {
   width: 100%;
   height: 100%;
   object-fit: fill;
-
 }
 
 .gallary-item .gallary-content {
@@ -9898,7 +9897,7 @@ START: Blog CSS
 
 @media only screen and (max-width: 767px) {
   .post-card .post-content .title {
-    font-size: 16px; 
+    font-size: 16px;
   }
 }
 
@@ -11842,7 +11841,7 @@ START: Footer CSS
 /* ///// */
 
 .testimonial-section {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   padding-top: 100px;
   width: 100%;
   height: auto;
@@ -11984,7 +11983,7 @@ START: Footer CSS
 }
 
 .icon2 {
-  background-color: var(--rr-color-theme-primary);
+  /* background-color: var(--rr-color-theme-primary); */
   height: 120px;
   width: 120px;
   display: flex;
@@ -12035,16 +12034,17 @@ START: Footer CSS
 }
 
 .page-filter-btn {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  background-color: #e4e4e4;
   font-family: var(--rr-ff-heading);
   color: black;
   display: inline-flex;
   align-items: center;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   padding: 20px 40px;
-  border-radius: 100px;
+  border-radius: 10px;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   text-transform: uppercase;
@@ -12059,7 +12059,20 @@ START: Footer CSS
   border-color: #00b6e8;
 }
 
+.pagination-btn, .pagination-ellipsis{
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5px;
+  font-family: var(--rr-ff-heading);
+  font-weight: 600;
+}
 
+.pagination-btn.active{
+  background-color: #00b6e8;
+  color: white;
+  border: none;
+}
 
 .filter-btn:after,
 .filter-btn:before {
@@ -12237,7 +12250,7 @@ START: Footer CSS
 }
 
 .industry-icn div {
-  background-color: #7ddcf7;
+  /* background-color: #7ddcf7; */
   margin: 10px;
   border-radius: 10px;
   padding-inline: auto;
@@ -12271,7 +12284,7 @@ START: Footer CSS
   transition: all 0.2s ease-in;
 }
 
-.page-btn:hover{
+.page-btn:hover {
   color: white
 }
 
@@ -12352,12 +12365,77 @@ START: Footer CSS
 }
 
 .why-icn {
-  background-color: #6bd1ee;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  padding: 15px;
+  padding: 20px;
   margin: 20px;
+}
+
+.work-card {
+  padding-inline: 40px;
+}
+
+.work-line::after {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/img/images/how-we-work1.svg);
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 96px;
+  left: 98%;
+  top: 25%;
+  z-index: 1;
+}
+
+.h-line::before {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/img/images/how-we-work2.svg);
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 1020px;
+  right: 44%;
+  top: 98%;
+  z-index: 1;
+}
+
+@media (max-width: 1025px){
+  .work-line::after {
+    display: none;
+  }
+
+  .h-line::before {
+   display: none;
+  }
+
+  .work-card {
+    padding-inline: 20px;
+  }
+}
+
+.orange-icon {
+  background-color: rgb(255, 204, 127);
+}
+
+.pink-icon {
+  background-color: rgb(255, 190, 239);
+}
+
+.blue-icon {
+  background-color: rgb(107, 209, 238);
+}
+
+.green-icon {
+  background-color: rgb(127, 255, 180);
+}
+
+.yellow-icon {
+  background-color: rgb(250, 252, 154);
+}
+
+.violet-icon {
+  background-color: rgb(178, 177, 253);
 }
 
 /* For a basic map, using a static image */

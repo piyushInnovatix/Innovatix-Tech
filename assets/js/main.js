@@ -974,11 +974,11 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       const category = this.getAttribute("data-category");
 
-     filterButtons.forEach((btn) => {
-      btn.classList.remove("active")
-     })
+      filterButtons.forEach((btn) => {
+        btn.classList.remove("active")
+      })
 
-     this.classList.add("active")
+      this.classList.add("active")
 
       projects.forEach((project) => {
         if (
@@ -1004,3 +1004,19 @@ window.addEventListener("scroll", () => {
     ticking = true;
   }
 });
+
+const loadBtn = document.getElementById("loadBtn")
+
+loadBtn.addEventListener("click", function () {
+  console.log("clicked")
+  const laterLoaded = document.querySelectorAll("#later-loaded")
+
+  laterLoaded.forEach(element => {
+    element.classList.remove("d-none")
+    element.classList.add("d-block")
+  });
+
+  loadBtn.classList.add("d-none")
+
+  
+})
