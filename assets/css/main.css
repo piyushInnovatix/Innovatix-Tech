@@ -5674,7 +5674,7 @@ START: Theme Slider CSS
 }
 
 .about-items .about-item .icon {
-  /* background-color: var(--rr-color-theme-primary); */
+  background-color: var(--rr-color-theme-primary);
   height: 85px;
   width: 85px;
   display: flex;
@@ -5686,7 +5686,7 @@ START: Theme Slider CSS
 }
 
 .method-icon {
-  /* background-color: var(--rr-color-theme-primary); */
+  background-color: var(--rr-color-theme-primary);
   margin-inline: 15px;
   margin-top: 15px;
   padding: 20px;
@@ -6103,7 +6103,7 @@ START: Theme Slider CSS
 }
 
 .service-item .icon {
-  /* background-color: var(--rr-color-theme-primary); */
+  background-color: var(--rr-color-theme-primary);
   height: 98px;
   width: 98px;
   border-radius: 50%;
@@ -8715,7 +8715,7 @@ START: Theme Slider CSS
 }
 
 .feature-item .icon {
-  /* background-color: var(--rr-color-theme-primary); */
+  background-color: var(--rr-color-theme-primary);
   height: 98px;
   width: 98px;
   padding: 25px;
@@ -11989,7 +11989,7 @@ START: Footer CSS
 }
 
 .icon2 {
-  /* background-color: var(--rr-color-theme-primary); */
+  background-color: var(--rr-color-theme-primary);
   height: 120px;
   width: 120px;
   display: flex;
@@ -12371,6 +12371,7 @@ START: Footer CSS
 }
 
 .why-icn {
+  background-color: var(--rr-color-theme-primary);
   height: 80px;
   width: 80px;
   border-radius: 50%;
@@ -12418,30 +12419,6 @@ START: Footer CSS
   .work-card {
     padding-inline: 20px;
   }
-}
-
-.orange-icon {
-  background-color: rgb(255, 204, 127);
-}
-
-.pink-icon {
-  background-color: rgb(255, 190, 239);
-}
-
-.blue-icon {
-  background-color: rgb(107, 209, 238);
-}
-
-.green-icon {
-  background-color: rgb(127, 255, 180);
-}
-
-.yellow-icon {
-  background-color: rgb(250, 252, 154);
-}
-
-.violet-icon {
-  background-color: rgb(178, 177, 253);
 }
 
 /* For a basic map, using a static image */
