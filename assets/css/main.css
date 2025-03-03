@@ -5473,8 +5473,14 @@ START: Theme Slider CSS
   /* border: 3px solid var(--rr-color-heading-primary); */
 }
 
+
+
+.about-img-1{
+  height: 900px;
+}
+
 @media only screen and (max-width: 767px) {
-  .about-img {
+  .about-img, .about-img-1 {
     height: 450px;
   }
 }
@@ -12360,7 +12366,7 @@ START: Footer CSS
 }
 
 .why-container .content p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 25px;
 }
 
