@@ -500,14 +500,14 @@ ul {
   transform-origin: left;
 }
 
-.img-reveal {
+/* .  {
   position: relative;
   overflow: hidden;
   visibility: hidden;
   z-index: 1;
 }
 
-.img-reveal .img-overlay {
+.  .img-overlay {
   background-color: var(--rr-color-theme-primary);
   height: 100%;
   width: 100%;
@@ -515,9 +515,9 @@ ul {
   top: 0;
   left: 0;
   z-index: 2;
-}
+} */
 
-.img-reveal img {
+.img {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -5687,8 +5687,8 @@ START: Theme Slider CSS
 
 .method-icon {
   background-color: var(--rr-color-theme-primary);
-  margin-inline: 15px;
-  margin-top: 15px;
+  margin-inline: 25px;
+  margin-top: 25px;
   padding: 20px;
   height: 85px;
   width: 85px;
@@ -12262,6 +12262,13 @@ START: Footer CSS
   padding-inline: auto;
 }
 
+.sliding-icon {
+  padding: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  padding-inline: auto;
+}
+
 .industry-icn p {
   font-size: 20px;
   font-weight: bolder;
@@ -12294,21 +12301,23 @@ START: Footer CSS
   color: white
 }
 
-.why-card {
+.why-card, .why-card-right {
   overflow: hidden;
 }
 
-.why-card .card-body {
+.why-card .card-body, .why-card-right .card-body {
   z-index: 2;
 }
 
 .why-card h3,
-.why-card p {
+.why-card p, .why-card-right h3,
+.why-card-right p {
   transition: all 0.1s linear;
 }
 
 .why-card:hover h3,
-.why-card:hover p {
+.why-card:hover p, .why-card-right:hover h3,
+.why-card-right:hover p {
   color: white
 }
 
@@ -12326,7 +12335,25 @@ START: Footer CSS
   z-index: 1;
 }
 
+.why-card-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00b6e8;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: all 0.3s ease-out;
+  z-index: 1;
+}
+
 .why-card:hover::before {
+  transform: scaleX(1);
+}
+
+.why-card-right:hover::before {
   transform: scaleX(1);
 }
 
@@ -12376,7 +12403,7 @@ START: Footer CSS
   width: 80px;
   border-radius: 50%;
   padding: 20px;
-  margin: 20px;
+  margin-block: 20px;
 }
 
 .work-card {

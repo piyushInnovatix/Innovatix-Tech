@@ -4,7 +4,67 @@ const projectGroups = Array.from({ length: Math.ceil(projectItems.length / 6) },
 );
 const totalPages = projectGroups.length;
 const projectContainer = document.getElementById('project-container');
-const paginationContainer = document.getElementById('pagination-container'); // You'll need to add this element
+const paginationContainer = document.getElementById('pagination-container');
+const filterButtons = document.querySelectorAll(".page-filter-btn");
+const projects = document.querySelectorAll(".img-disable");
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Hide pagination initially (will show only if "all" is active)
+    updatePaginationVisibility("all");
+    
+    filterButtons.forEach((button) => {
+        if (button.getAttribute("data-category") === "all") {
+            button.classList.add("active");
+        }
+
+        button.addEventListener("click", function () {
+            const category = this.getAttribute("data-category");
+
+            filterButtons.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            this.classList.add("active");
+            
+            // Update pagination visibility based on selected category
+            updatePaginationVisibility(category);
+
+            if (category === "all") {
+                // Show projects by group when "all" is selected
+                showGroup(0);
+            } else {
+                // When specific category is selected, show all matching projects
+                // and hide pagination
+                projects.forEach((project) => {
+                    if (project.getAttribute("data-category") === category) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            }
+        });
+    });
+});
+
+// Function to show/hide pagination based on selected category
+function updatePaginationVisibility(category) {
+    if (category === "all") {
+        paginationContainer.style.display = "flex"; // or "block" depending on your CSS
+    } else {
+        paginationContainer.style.display = "none";
+    }
+}
+
+const allActive = () => {
+    filterButtons.forEach((button) => {
+        if (button.getAttribute('data-category') == 'all') {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+    });
+};
 
 let currentPage = 0;
 
@@ -13,12 +73,14 @@ function showGroup(pageIndex) {
 
     currentPage = pageIndex;
 
-    projectGroups.forEach((group, index) => {
-        if (index === pageIndex) {
-            group.forEach((item) => item.style.display = 'block');
-        } else {
-            group.forEach((item) => item.style.display = "none");
-        }
+    // Hide all projects first
+    projects.forEach(project => {
+        project.style.display = "none";
+    });
+
+    // Only show projects for current page
+    projectGroups[pageIndex].forEach((item) => {
+        item.style.display = 'block';
     });
 
     updatePaginationButtons();
@@ -31,7 +93,10 @@ function updatePaginationButtons() {
     prevButton.innerHTML = '&lt;';
     prevButton.className = 'pagination-btn prev-btn';
     prevButton.disabled = currentPage === 0;
-    prevButton.addEventListener('click', () => showGroup(currentPage - 1));
+    prevButton.addEventListener('click', () => {
+        showGroup(currentPage - 1);
+        allActive();
+    });
     paginationContainer.appendChild(prevButton);
 
     let visiblePages = [];
@@ -50,7 +115,10 @@ function updatePaginationButtons() {
         const firstPageButton = document.createElement('button');
         firstPageButton.textContent = '1';
         firstPageButton.className = 'pagination-btn';
-        firstPageButton.addEventListener('click', () => showGroup(0));
+        firstPageButton.addEventListener('click', () => {
+            showGroup(0);
+            allActive();
+        });
         paginationContainer.appendChild(firstPageButton);
 
         if (visiblePages[0] > 1) {
@@ -67,7 +135,10 @@ function updatePaginationButtons() {
         pageButton.className = currentPage === pageIndex
             ? 'pagination-btn active'
             : 'pagination-btn';
-        pageButton.addEventListener('click', () => showGroup(pageIndex));
+        pageButton.addEventListener('click', () => {
+            showGroup(pageIndex);
+            allActive();
+        });
         paginationContainer.appendChild(pageButton);
     });
 
@@ -82,7 +153,10 @@ function updatePaginationButtons() {
         const lastPageButton = document.createElement('button');
         lastPageButton.textContent = totalPages.toString();
         lastPageButton.className = 'pagination-btn';
-        lastPageButton.addEventListener('click', () => showGroup(totalPages - 1));
+        lastPageButton.addEventListener('click', () => {
+            showGroup(totalPages - 1);
+            allActive();
+        });
         paginationContainer.appendChild(lastPageButton);
     }
 
@@ -90,9 +164,12 @@ function updatePaginationButtons() {
     nextButton.innerHTML = '&gt;';
     nextButton.className = 'pagination-btn next-btn';
     nextButton.disabled = currentPage === totalPages - 1;
-    nextButton.addEventListener('click', () => showGroup(currentPage + 1));
+    nextButton.addEventListener('click', () => {
+        showGroup(currentPage + 1);
+        allActive();
+    });
     paginationContainer.appendChild(nextButton);
 }
 
-// Initial setup
+// Initial setup - show first page with "all" category active
 showGroup(0);

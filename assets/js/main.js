@@ -966,34 +966,6 @@
   });
 })(jQuery);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const filterButtons = document.querySelectorAll(".page-filter-btn");
-  const projects = document.querySelectorAll(".img-disable");
-
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const category = this.getAttribute("data-category");
-
-      filterButtons.forEach((btn) => {
-        btn.classList.remove("active")
-      })
-
-      this.classList.add("active")
-
-      projects.forEach((project) => {
-        if (
-          category === "all" ||
-          project.getAttribute("data-category") === category
-        ) {
-          project.style.display = "block";
-        } else {
-          project.style.display = "none";
-        }
-      });
-    });
-  });
-});
-
 let ticking = false;
 window.addEventListener("scroll", () => {
   if (!ticking) {
@@ -1018,5 +990,5 @@ loadBtn.addEventListener("click", function () {
 
   loadBtn.classList.add("d-none")
 
-  
+
 })
