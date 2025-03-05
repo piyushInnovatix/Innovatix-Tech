@@ -981,14 +981,11 @@ const loadBtn = document.getElementById("loadBtn")
 
 loadBtn.addEventListener("click", function () {
   console.log("clicked")
-  const laterLoaded = document.querySelectorAll("#later-loaded")
+  const laterLoaded = Array.from(document.querySelectorAll("#later-loaded"));
 
   laterLoaded.forEach(element => {
     element.classList.remove("d-none")
     element.classList.add("d-block")
   });
-
   loadBtn.classList.add("d-none")
-
-
 })

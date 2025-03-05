@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-
 </head>
 
 <body>
@@ -215,255 +214,120 @@
             <!-- page-header -->
 
             <!-- blog section -->
-            <section class="blog-section pt-140 pb-100 overflow-hidden">
+            <section class="blog-details pt-130 pb-130 white-bg">
                 <div class="container">
-                    <div class="section-heading">
-                        <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
-                            Blog Posts
-                        </h4>
-                        <h2 class="section-title fw-bold" data-text-animation="fade-in" data-split="char"
-                            data-duration="0.6" data-stagger="0.07">
-                            Read Our Latest Blog & Insights
-                        </h2>
-                    </div>
-                    <div class="row gy-lg-0 gy-4 justify-content-center fade-wrapper">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-1.jpg" alt="post" />
+                    <div class="row gy-5">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="blog-details-wrap">
+
+                                <!-- blog-content -->
+                                <div class="blog-details-img mb-40">
+                                    <img src="" id="blog-img" alt="blog" style="object-fit: fill    ;">
                                 </div>
-                                <div class="post-content">
+                                <div class="blog-details-content">
                                     <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>10 Feb, 2025
-                                        </li>
+                                        <li><i class="fa-sharp fa-solid fa-clock"></i>15 Jan, 2023</li>
+                                        <li><i class="fa-solid fa-user"></i>By Our Team</li>
                                     </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page1">Benefits of Responsive Web Design in the Mobile Era</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page1" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
+                                    <h2 class="details-title mb-25" id="blog-title"></h2>
+                                    <p class="mb-40" id="blog-des">
+                                    </p>
                                 </div>
+                                <!-- blog-content -->
+
+                                <!-- form area -->
+                                <div class="form-wrap">
+                                    <div class="blog-contact-form">
+                                        <h2 class="title">Leave A Reply</h2>
+                                        <div class="request-form">
+                                            <form action="mail.php" method="post" id="ajax_contact"
+                                                class="form-horizontal">
+                                                <div class="form-group row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-item">
+                                                            <h4 class="form-title">Email*</h4>
+                                                            <input type="text" id="fullname" name="fullname"
+                                                                class="form-control" placeholder="Full Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-item">
+                                                            <h4 class="form-title">Name*</h4>
+                                                            <input type="email" id="email" name="email"
+                                                                class="form-control" placeholder="Your Email">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-item message-item">
+                                                            <textarea id="message" name="message" cols="30" rows="5"
+                                                                class="form-control address"
+                                                                placeholder="Write Message Here*"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="submit-btn">
+                                                    <button id="submit" class="rr-primary-btn" type="submit">Post
+                                                        Comment</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- form area -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-2.jpg" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>28 Jan, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page2">How Emerging Technologies Are Shaping Creative</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page2" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
+                        <!-- Sidebar Widgets -->
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="sidebar-widget">
+                                <h3 class="widget-title">Search Here</h3>
+                                <div class="search-box">
+                                    <form action="contact.php" class="search-form">
+                                        <input type="text" class="form-control" placeholder="Enter Keyword">
+                                        <button class="search-btn" type="button">
+                                            <i class="fa-regular fa-magnifying-glass"></i>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-3.jpg" alt="post" />
+                            <div class="sidebar-widget">
+                                <h3 class="widget-title">Recent Post</h3>
+                                <div class="sidebar-post">
+                                    <img src="" id="img-1" alt="post">
+                                    <div class="post-content">
+                                        <ul class="post-meta">
+                                            <li><i class="fa-sharp fa-solid fa-clock"></i>15 Jan, 2023</li>
+                                        </ul>
+                                        <h3 class="title"><a href="blog-details.html?id=page11" id="post1"></a>
+                                        </h3>
+                                    </div>
                                 </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>15 Jan, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page3">Importance of AI in the Modern times</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page3" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
+                                <div class="sidebar-post">
+                                    <img src="" id="img-2" alt="post">
+                                    <div class="post-content">
+                                        <ul class="post-meta">
+                                            <li><i class="fa-sharp fa-solid fa-clock"></i>15 Jan, 2023</li>
+                                        </ul>
+                                        <h3 class="title"><a href="blog-details.html?id=page10" id="post2"></a></h3>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-4.jpg" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>18 Feb, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page4">How Game-Based Learning is Revolutionizing Education in 2025</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page4" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
+                                <div class="sidebar-post">
+                                    <img src="" id="img-3" alt="post">
+                                    <div class="post-content">
+                                        <ul class="post-meta">
+                                            <li><i class="fa-sharp fa-solid fa-clock"></i>15 Jan, 2023</li>
+                                        </ul>
+                                        <h3 class="title"><a href="blog-details.html?id=page9"  id="post3"></a>
+                                        </h3>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-5.jpg" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>28 Jan, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page5">Manual vs. Automated Testing: Choosing the Right Approach</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page5" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-6.webp" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>15 Jan, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page6">10 UI UX Design Mistakes You Should Avoid In 2025</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page6" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5 d-none" id="later-loaded">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-7.jpg" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>10 Feb, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page7">Top 5 AI Trends to Watch in 2025</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page7" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5 d-none" id="later-loaded">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-8.webp" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>28 Jan, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page8">What is Product Design: A Comprehensive Guide</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page8" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5 d-none" id="later-loaded">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-9.webp" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>15 Jan, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page9">How 3D Art Transforms the Gaming Experience</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page9" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5 d-none" id="later-loaded">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-10.jpeg" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>10 Feb, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page10">How To Integrate OpenAI API Into My Business App</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page10" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5 d-none" id="later-loaded">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-11.webp" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>28 Jan, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page11">9 Reasons Why Your Business Needs Progressive Web App</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page11" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5 d-none" id="later-loaded">
-                            <div class="post-card fade-top">
-                                <div class="post-thumb">
-                                    <img src="assets/img/Blog/blog-12.jpg" alt="post" />
-                                </div>
-                                <div class="post-content">
-                                    <ul class="post-meta">
-                                        <li><i class="fa-solid fa-user"></i>By our team</li>
-                                        <li>
-                                            <i class="fa-sharp fa-solid fa-clock"></i>15 Jan, 2025
-                                        </li>
-                                    </ul>
-                                    <h3 class="title">
-                                        <a href="blog-details.html?id=page12">What Is The Cost Of React Native App Development?</a>
-                                    </h3>
-                                    <a href="blog-details.html?id=page12" class="rr-primary-btn blog-btn">Read More
-                                        <i class="fa-solid fa-regular fa-arrow-right"></i></a>
+                            <div class="sidebar-widget blog-cta text-center">
+                                <div class="logo">
+                                    <a href="index.html"><img src="/assets/img/logo/logo-1.png" alt="logo"></a>
+                                    <h3 class="title">Ask Question? <br>Let’s Talk</h3>
+                                    <a href="contact.html" class="rr-primary-btn">Let’s Talk</a>
                                 </div>
                             </div>
                         </div>
@@ -471,12 +335,6 @@
                 </div>
             </section>
             <!-- blog section -->
-
-            <!-- load button -->
-            <div class="load-btn d-flex justify-content-center pb-100" id="loadBtn">
-                <a class="rr-primary-btn">Load More</a>
-            </div>
-            <!-- load button -->
 
             <!-- footer starts -->
             <footer class="footer-section pt-100">
@@ -710,6 +568,7 @@
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/blogs.js"></script>
 </body>
 
 </html>

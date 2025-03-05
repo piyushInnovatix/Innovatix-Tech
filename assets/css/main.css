@@ -5475,12 +5475,14 @@ START: Theme Slider CSS
 
 
 
-.about-img-1{
+.about-img-1 {
   height: 900px;
 }
 
 @media only screen and (max-width: 767px) {
-  .about-img, .about-img-1 {
+
+  .about-img,
+  .about-img-1 {
     height: 450px;
   }
 }
@@ -10777,7 +10779,7 @@ START: Sidebar CSS
 START: Blog Details CSS
 ----------------------------------------*/
 .blog-details-wrap {
-  border: 3px solid var(--rr-color-heading-primary);
+  border: 2px solid rgb(226, 226, 226);
   border-radius: 30px;
   overflow: hidden;
 }
@@ -10785,7 +10787,6 @@ START: Blog Details CSS
 .blog-details-img {
   width: 100%;
   height: 450px;
-  border-bottom: 3px solid var(--rr-color-heading-primary);
 }
 
 .blog-details-img img {
@@ -10810,7 +10811,7 @@ START: Blog Details CSS
 .blog-details-content {
   padding: 40px;
   padding-top: 0;
-  border-bottom: 3px solid var(--rr-color-heading-primary);
+  border-bottom: 2px solid rgb(226, 226, 226);
 }
 
 @media only screen and (max-width: 767px) {
@@ -10872,13 +10873,6 @@ START: Blog Details CSS
   .blog-details-content .blog-details-thumb {
     height: 300px;
   }
-}
-
-blockquote {
-  background-color: var(--rr-color-common-white);
-  border-radius: 20px;
-  border: 3px solid var(--rr-color-heading-primary);
-  overflow: hidden;
 }
 
 blockquote .quote-text {
@@ -11034,7 +11028,7 @@ blockquote .content p {
 .blog-contact-form .request-form .form-item {
   position: relative;
   padding: 25px 40px;
-  border: 2px solid var(--rr-color-heading-primary);
+  border: 2px solid rgb(226, 226, 226);
   margin-bottom: 20px;
   border-radius: 10px;
 }
@@ -11090,8 +11084,8 @@ blockquote .content p {
 
 .sidebar-widget {
   padding: 40px;
-  border: 3px solid var(--rr-color-heading-primary);
-  border-radius: 30px;
+  border: 2px solid rgb(226, 226, 226);
+  border-radius: 15px;
   margin-left: 10px;
 }
 
@@ -11128,7 +11122,7 @@ blockquote .content p {
   background-color: #f6f6f6;
   color: var(--rr-color-heading-primary);
   font-size: 16px;
-  border: 1px solid var(--rr-color-heading-primary);
+  border: 1px solid rgb(226,226,226);
   border-radius: 100px;
   box-shadow: none;
   padding: 14.5px 0;
@@ -11174,7 +11168,6 @@ blockquote .content p {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
-  border: 2px solid var(--rr-color-heading-primary);
 }
 
 .sidebar-widget .category-list {
@@ -11325,7 +11318,6 @@ blockquote .content p {
   width: 90px;
   height: 100%;
   object-fit: cover;
-  border: 3px solid var(--rr-color-heading-primary);
   border-radius: 15px;
 }
 
@@ -11402,7 +11394,7 @@ blockquote .content p {
 }
 
 .sidebar-widget.blog-cta {
-  background-color: var(--rr-color-theme-primary);
+  background-color: transparent;
 }
 
 .sidebar-widget.blog-cta .title {
@@ -11412,17 +11404,17 @@ blockquote .content p {
 }
 
 .sidebar-widget.blog-cta .rr-primary-btn {
-  background-color: var(--rr-color-heading-primary);
-  color: var(--rr-color-common-white);
+  background-color: #00b6e8;
+  color: black;
 }
 
 .sidebar-widget.blog-cta .rr-primary-btn:before,
 .sidebar-widget.blog-cta .rr-primary-btn:after {
-  background-color: var(--rr-color-common-white);
+  background-color: black;
 }
 
 .sidebar-widget.blog-cta .rr-primary-btn:hover {
-  color: var(--rr-color-heading-primary);
+  color: white;
 }
 
 /* !END: Theme Blog Details CSS */
@@ -12065,7 +12057,8 @@ START: Footer CSS
   border-color: #00b6e8;
 }
 
-.pagination-btn, .pagination-ellipsis{
+.pagination-btn,
+.pagination-ellipsis {
   background-color: #e6e6e6;
   border-radius: 10px;
   padding: 20px;
@@ -12074,7 +12067,7 @@ START: Footer CSS
   font-weight: 600;
 }
 
-.pagination-btn.active{
+.pagination-btn.active {
   background-color: #00b6e8;
   color: white;
   border: none;
@@ -12301,22 +12294,26 @@ START: Footer CSS
   color: white
 }
 
-.why-card, .why-card-right {
+.why-card,
+.why-card-right {
   overflow: hidden;
 }
 
-.why-card .card-body, .why-card-right .card-body {
+.why-card .card-body,
+.why-card-right .card-body {
   z-index: 2;
 }
 
 .why-card h3,
-.why-card p, .why-card-right h3,
+.why-card p,
+.why-card-right h3,
 .why-card-right p {
   transition: all 0.1s linear;
 }
 
 .why-card:hover h3,
-.why-card:hover p, .why-card-right:hover h3,
+.why-card:hover p,
+.why-card-right:hover h3,
 .why-card-right:hover p {
   color: white
 }
@@ -12434,13 +12431,13 @@ START: Footer CSS
   z-index: 1;
 }
 
-@media (max-width: 1025px){
+@media (max-width: 1025px) {
   .work-line::after {
     display: none;
   }
 
   .h-line::before {
-   display: none;
+    display: none;
   }
 
   .work-card {
