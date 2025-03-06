@@ -254,18 +254,19 @@
             </div>
             <div class="col-lg-6">
               <div class="appointment-form form-2 fade-top">
-                <form action="mail.php">
+                <form action="https://formspree.io/f/moveajag" method="POST">
                   <div class="form-group row">
                     <div class="col-md-6">
                       <div class="form-item">
                         <h4 class="title">Your Name*</h4>
-                        <input type="text" id="fullname" name="fullname" class="form-control" placeholder="">
+                        <input name="name" type="text" id="fullname" name="fullname" class="form-control"
+                          placeholder="Your Name" required>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-item">
                         <h4 class="title">Email address*</h4>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="">
+                        <input name="email" type="email" id="email" name="email" class="form-control" required>
                       </div>
                     </div>
                   </div>
@@ -273,13 +274,13 @@
                     <div class="col-md-6">
                       <div class="form-item">
                         <h4 class="title">Phone number*</h4>
-                        <input type="text" id="phone" name="phone" class="form-control" placeholder="">
+                        <input name="number" type="text" id="phone" name="phone" class="form-control" required>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-item">
-                        <h4 class="title">Company website*</h4>
-                        <input type="email" id="website" name="website" class="form-control" placeholder="">
+                        <h4 class="title">Company website</h4>
+                        <input name="website" type="email" id="website" name="website" class="form-control">
                       </div>
                     </div>
                   </div>
@@ -287,7 +288,7 @@
                     <div class="col-md-12">
                       <div class="form-item">
                         <h4 class="title">Company / Organization about*</h4>
-                        <input type="email" id="Company" name="Company" class="form-control" placeholder="">
+                        <input name="company" type="email" id="Company" name="Company" class="form-control" required>
                       </div>
                     </div>
                   </div>
@@ -295,8 +296,8 @@
                     <div class="col-md-12">
                       <div class="form-item message-item">
                         <h4 class="title">Describe your message*</h4>
-                        <textarea id="message" name="message" cols="30" rows="5" class="form-control address"
-                          placeholder=""></textarea>
+                        <textarea name="message" id="message" name="message" cols="30" rows="5"
+                          class="form-control address" required></textarea>
                       </div>
                     </div>
                   </div>
@@ -435,7 +436,7 @@
             </div>
           </div>
         </div>
-        <div  class="footer-mid">
+        <div class="footer-mid">
           <div class="container">
             <div class="row footer-wrap">
               <div class="col-xl-3 col-lg-6 col-md-6 footer-col">
