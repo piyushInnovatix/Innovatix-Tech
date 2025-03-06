@@ -8008,8 +8008,8 @@ START: Theme Slider CSS
   background-color: #00b6e8;
   color: var(--rr-color-heading-primary);
   font-size: 26px;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -11461,7 +11461,7 @@ START: Footer CSS
   margin-bottom: 0;
 }
 
-.footer-col:not(:last-child){
+.footer-col:not(:last-child) {
   border-right: 2px dashed #545454;
 }
 
@@ -12265,10 +12265,11 @@ START: Footer CSS
 }
 
 .sliding-icon {
-  padding: 40px;
+  padding: 20px;
   margin: 10px;
   border-radius: 10px;
   padding-inline: auto;
+  height: 100px;
 }
 
 .industry-icn p {
