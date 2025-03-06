@@ -11122,7 +11122,7 @@ blockquote .content p {
   background-color: #f6f6f6;
   color: var(--rr-color-heading-primary);
   font-size: 16px;
-  border: 1px solid rgb(226,226,226);
+  border: 1px solid rgb(226, 226, 226);
   border-radius: 100px;
   box-shadow: none;
   padding: 14.5px 0;
@@ -11443,14 +11443,26 @@ START: Footer CSS
 }
 
 .footer-top {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 20px;
   margin-bottom: 80px;
-  border-bottom: 2px solid #646464;
+  border-bottom: 1px dashed #646464;
 }
+
+/* .footer-top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  height: 2px;
+  width: 100%;
+  background-color: #171717;
+  border: 1px dashed #545454;
+} */
 
 .footer-top .title {
   color: var(--rr-color-common-white);
@@ -11458,6 +11470,14 @@ START: Footer CSS
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 0;
+}
+
+.footer-col:not(:last-child){
+  border-right: 1px dashed #545454;
+}
+
+.footer-mid {
+  border-bottom: 1px dashed #545454;
 }
 
 @media only screen and (max-width: 992px) {
@@ -11743,7 +11763,7 @@ START: Footer CSS
 }
 
 .copyright-content {
-  border-top: 1px solid #353535;
+  /* border-top: 1px solid #353535; */
   padding: 30px 0;
 }
 
@@ -12370,15 +12390,17 @@ START: Footer CSS
     padding-block: 50px;
   }
 
-  .footer-col:not(:last-child)::after {
+  /* .footer-col:not(:last-child)::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0px;
     width: 2px;
     height: 100%;
-    background-color: #646464;
-  }
+    background-color: #171717;
+    border: 1px solid #545454;
+    border-style: dashed;
+  } */
 
   .footer-col:first-child::after {
     right: -15%;
