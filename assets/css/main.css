@@ -11450,19 +11450,8 @@ START: Footer CSS
   flex-wrap: wrap;
   row-gap: 20px;
   margin-bottom: 80px;
-  border-bottom: 1px dashed #646464;
+  border-bottom: 2px dashed #646464;
 }
-
-/* .footer-top::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0px;
-  height: 2px;
-  width: 100%;
-  background-color: #171717;
-  border: 1px dashed #545454;
-} */
 
 .footer-top .title {
   color: var(--rr-color-common-white);
@@ -11473,11 +11462,11 @@ START: Footer CSS
 }
 
 .footer-col:not(:last-child){
-  border-right: 1px dashed #545454;
+  border-right: 2px dashed #545454;
 }
 
 .footer-mid {
-  border-bottom: 1px dashed #545454;
+  border-bottom: 2px dashed #545454;
 }
 
 @media only screen and (max-width: 992px) {
@@ -11684,7 +11673,7 @@ START: Footer CSS
 }
 
 .footer-widget.footer-col-2 {
-  padding-left: 70px;
+  padding-left: 40px;
 }
 
 @media (max-width: 1170px) {
