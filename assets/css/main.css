@@ -48,10 +48,9 @@ START: Template Default CSS
   --rr-color-common-dark: #232323;
   --rr-color-heading-primary: #171717;
   --rr-color-text-body: #2c3135;
-
   --rr-color-theme-primary: #00b6e8;
-
   --rr-color-theme-secondary: #027dc0;
+  --rr-color-alternative: #f5fdff;
   --rr-color-bg-1: #11151c;
   --rr-color-grey-1: #f4f4f2;
   --rr-color-border-1: #171717;
@@ -250,6 +249,11 @@ ul {
 /**
     Common Classes CSS
 */
+
+.alternate-bg{
+  background-color: var(--rr-color-alternative);
+}
+
 .w-img img {
   width: 100%;
 }
@@ -8973,7 +8977,7 @@ START: Theme Slider CSS
     START: Sponsor CSS
 ----------------------------------------*/
 .sponsor-section {
-  background-color: var(--rr-color-heading-primary);
+  /* background-color: var(--rr-color-heading-primary); */
   padding: 100px 0;
 }
 
@@ -11654,6 +11658,7 @@ START: Footer CSS
   color: var(--rr-color-heading-primary);
   height: 40px;
   width: 40px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11852,7 +11857,6 @@ START: Footer CSS
   padding-top: 100px;
   width: 100%;
   height: auto;
-  background-color: white;
   color: rgb(0, 0, 0);
 }
 
@@ -12042,7 +12046,7 @@ START: Footer CSS
 
 .page-filter-btn {
   /* border: 2px solid black; */
-  background-color: #e4e4e4;
+  background-color: #eeeeee;
   font-family: var(--rr-ff-heading);
   color: black;
   display: inline-flex;
@@ -12068,7 +12072,7 @@ START: Footer CSS
 
 .pagination-btn,
 .pagination-ellipsis {
-  background-color: #e6e6e6;
+  background-color: #eeeeee;
   border-radius: 10px;
   padding: 20px;
   margin: 5px;
