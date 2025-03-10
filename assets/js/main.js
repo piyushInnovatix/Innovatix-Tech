@@ -406,7 +406,7 @@
         767: {
           slidesPerView: 1,
           slidesPerGroup: 1,
-          spaceBetween: 10,
+          spaceBetween: 10,   
         },
         1024: {
           slidesPerView: 1,
